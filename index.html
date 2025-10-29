@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Evergreen Works — Digital Marketing Agency</title>
+  <meta name="description" content="Big-agency strategy, small-town care. Evergreen Works helps local businesses grow with SEO, ads, content, and conversion-focused websites." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="/favicon.ico" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Evergreen Works — Digital Marketing Agency">
+  <meta property="og:description" content="Marketing that works, season after season.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://evergreenworks.co/">
+  <meta property="og:image" content="https://evergreenworks.co/og-image.jpg">
+
+  <style>
+    :root{
+      --evergreen:#0B3B2E;     /* deep evergreen primary */
+      --evergreen-600:#145846; /* hover/alt */
+      --evergreen-050:#F1F6F4; /* very light tint */
+      --ink:#0F172A;           /* near-black */
+      --ink-600:#334155;       /* slate */
+      --paper:#ffffff;         /* background */
+      --accent:#52B788;        /* subtle accent */
+      --warning:#F59E0B;       /* CTA accent (optional) */
+      --radius:16px;
+      --shadow:0 10px 25px rgba(16,24,40,.08);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--paper);color:var(--ink);font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    img{max-width:100%;display:block}
+    a{color:var(--evergreen);text-decoration:none}
+    a:hover{color:var(--evergreen-600)}
+    .container{max-width:1100px;margin:0 auto;padding:0 20px}
+    header{
+      position:sticky;top:0;z-index:50;background:rgba(255,255,255,.8);
+      backdrop-filter:saturate(180%) blur(8px); border-bottom:1px solid #eaeaea;
+    }
+    .nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+    .brand{display:flex;align-items:center;gap:10px}
+    .logo{
+      width:34px;height:34px;border-radius:50%;background:var(--evergreen);
+      display:grid;place-items:center;color:#fff;font-weight:700;box-shadow:var(--shadow)
+    }
+    .brand span{font-weight:700;letter-spacing:.2px}
+    .nav a.btn{padding:10px 16px;border-radius:999px;border:1px solid var(--evergreen);font-weight:600}
+    .nav a.btn.primary{background:var(--evergreen);color:#fff;border-color:var(--evergreen)}
+    .nav a.btn.primary:hover{background:var(--evergreen-600)}
+    .hero{
+      padding:72px 0;background:
+        radial-gradient(1200px 500px at 90% -10%, #CDE9DD 0%, rgba(205,233,221,0) 60%),
+        radial-gradient(900px 400px at -10% 0%, #E7F3EE 0%, rgba(231,243,238,0) 60%);
+    }
+    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center}
+    .eyebrow{color:var(--evergreen);font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:.85rem}
+    h1{font-size:clamp(32px,4vw,48px);line-height:1.1;margin:.35rem 0 1rem}
+    p.lede{font-size:clamp(16px,2.2vw,20px);color:var(--ink-600);max-width:56ch}
+    .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 18px;border-radius:999px;font-weight:600}
+    .btn.primary{background:var(--evergreen);color:#fff}
+    .btn.primary:hover{background:var(--evergreen-600)}
+    .btn.ghost{border:1px solid var(--evergreen);color:var(--evergreen);background:#fff}
+    .badgebar{display:flex;gap:18px;flex-wrap:wrap;margin-top:28px;opacity:.9}
+    .badge{background:var(--evergreen-050);color:var(--evergreen);padding:8px 12px;border-radius:999px;font-size:.85rem}
+
+    .section{padding:56px 0}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{
+      background:#fff;border:1px solid #e8e8e8;border-radius:var(--radius);padding:22px;box-shadow:var(--shadow);
+    }
+    .card h3{margin:0 0 .4rem;font-size:1.15rem}
+    .card p{color:var(--ink-600);font-size:.98rem}
+
+    .process{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .step{background:#fff;border:1px dashed #dfe7e4;border-radius:14px;padding:18px}
+    .step .n{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--accent);color:#0a2a20;font-weight:700;margin-bottom:8px}
+
+    .cta-banner{
+      background:linear-gradient(180deg, var(--evergreen) 0%, #0a2f25 100%); color:#fff;
+      border-radius:var(--radius); padding:28px; display:grid;grid-template-columns:1.2fr .8fr;gap:18px;align-items:center;
+    }
+    .cta-banner p{opacity:.95}
+
+    form{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .full{grid-column:1 / -1}
+    label{font-size:.9rem;font-weight:600}
+    input, textarea{
+      width:100%;padding:12px 14px;border:1px solid #d7e2df;border-radius:12px;font:inherit;outline:none;
+      background:#fff;
+    }
+    input:focus, textarea:focus{border-color:var(--evergreen);box-shadow:0 0 0 3px rgba(11,59,46,.1)}
+    textarea{min-height:120px;resize:vertical}
+
+    footer{padding:40px 0;border-top:1px solid #e8e8e8;background:#fff}
+    .footgrid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:18px}
+    .tiny{font-size:.9rem;color:var(--ink-600)}
+    .legal{margin-top:16px;color:#6b7280;font-size:.85rem}
+    .social a{display:inline-block;margin-right:10px}
+
+    /* Responsive */
+    @media (max-width: 940px){
+      .hero-grid, .cta-banner{grid-template-columns:1fr}
+      .cards{grid-template-columns:1fr 1fr}
+      .process{grid-template-columns:1fr 1fr}
+      form{grid-template-columns:1fr}
+    }
+    @media (max-width: 560px){
+      .cards{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav" role="navigation" aria-label="Primary">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">EW</div>
+        <span>Evergreen Works</span>
+      </div>
+      <div class="actions">
+        <a class="btn" href="#services">Services</a>
+        <a class="btn" href="#contact">Contact</a>
+        <a class="btn primary" href="#contact">Free Audit</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow">Digital marketing, small-town care</div>
+        <h1>Big-agency strategy. <br/>Local, hands-on execution.</h1>
+        <p class="lede">
+          We help East Greenville–area businesses get found, look great, and convert more leads—without wasting a dollar. SEO, ads, content, and websites that simply <em>work</em>.
+        </p>
+        <div class="cta-row">
+          <a class="btn primary" href="#contact" aria-label="Book a free consultation">Book a Free Consultation</a>
+          <a class="btn ghost" href="#services">See Services</a>
+        </div>
+        <div class="badgebar" aria-label="Key advantages">
+          <div class="badge">1-on-1 Strategy</div>
+          <div class="badge">Flexible Budgets</div>
+          <div class="badge">Transparent Reporting</div>
+        </div>
+      </div>
+      <div aria-hidden="true">
+        <!-- Simple illustrative block (swap with an image later) -->
+        <div style="aspect-ratio:4/3;border-radius:18px;border:1px solid #dfe7e4;background:
+          conic-gradient(from 180deg at 50% 50%, #cfe9dd, #ffffff 60%); display:grid; place-items:center;">
+          <div style="padding:16px 18px;border-radius:12px;background:#fff;box-shadow:var(--shadow);text-align:center;max-width:380px">
+            <div style="font-weight:700;color:var(--evergreen);margin-bottom:6px">Marketing That Grows</div>
+            <div style="color:#334155;font-size:.95rem">SEO • Local Ads • Websites • Email • Reviews</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section" id="services" aria-labelledby="services-title">
+    <div class="container">
+      <h2 id="services-title" style="font-size:1.8rem;margin:0 0 18px">What we do</h2>
+      <p class="tiny" style="margin:0 0 16px;max-width:62ch">
+        We pair NYC-level expertise with small-town reliability. Start lean, grow sustainably, and scale when it pays.
+      </p>
+      <div class="cards" role="list">
+        <article class="card" role="listitem">
+          <h3>Local SEO & Google Business</h3>
+          <p>Rank in local search, fix listings, post weekly updates, and collect reviews that drive calls.</p>
+        </article>
+        <article class="card" role="listitem">
+          <h3>Paid Ads that Pay Back</h3>
+          <p>Google & Meta campaigns with tight targeting and creative built to convert—not just get clicks.</p>
+        </article>
+        <article class="card" role="listitem">
+          <h3>Conversion-Focused Sites</h3>
+          <p>Fast, clean landing pages and websites with clear offers, clean copy, and simple lead capture.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="section" id="process" aria-labelledby="process-title">
+    <div class="container">
+      <h2 id="process-title" style="font-size:1.8rem;margin:0 0 18px">How we work</h2>
+      <div class="process">
+        <div class="step">
+          <div class="n" aria-hidden="true">1</div>
+          <strong>Free Audit</strong>
+          <p class="tiny">A quick check of search, site, and listings to spot easy wins.</p>
+        </div>
+        <div class="step">
+          <div class="n" aria-hidden="true">2</div>
+          <strong>Lean Plan</strong>
+          <p class="tiny">A phased roadmap that fits your budget and goals.</p>
+        </div>
+        <div class="step">
+          <div class="n" aria-hidden="true">3</div>
+          <strong>Build & Launch</strong>
+          <p class="tiny">We handle setup, creative, and tracking so you can run the business.</p>
+        </div>
+        <div class="step">
+          <div class="n" aria-hidden="true">4</div>
+          <strong>Measure & Improve</strong>
+          <p class="tiny">Monthly reporting and tweaks to keep ROI trending up.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-banner" role="region" aria-label="Free audit CTA">
+        <div>
+          <h3 style="margin:0 0 6px">Get your free Local Marketing Audit</h3>
+          <p style="margin:0">Five-minute intake. Clear next steps. No pressure.</p>
+        </div>
+        <div style="text-align:right">
+          <a class="btn primary" href="#contact">Start the Audit</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact" aria-labelledby="contact-title">
+    <div class="container">
+      <h2 id="contact-title" style="font-size:1.8rem;margin:0 0 18px">Let’s talk</h2>
+      <p class="tiny" style="margin:0 0 18px;max-width:62ch">
+        Tell us a bit about your business. We’ll reply within one business day.
+      </p>
+
+      <!-- Mailto fallback (swap action for your form handler or backend later) -->
+      <form aria-label="Contact form" action="mailto:hello@evergreenworks.co" method="post" enctype="text/plain">
+        <div>
+          <label for="name">Your name</label>
+          <input id="name" name="Name" placeholder="Jane Doe" required />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input id="email" name="Email" type="email" placeholder="you@company.com" required />
+        </div>
+        <div>
+          <label for="company">Business / Company</label>
+          <input id="company" name="Company" placeholder="Evergreen Café" />
+        </div>
+        <div>
+          <label for="service">Service interest</label>
+          <input id="service" name="Service Interest" placeholder="SEO, ads, website, etc." />
+        </div>
+        <div class="full">
+          <label for="message">What do you need help with?</label>
+          <textarea id="message" name="Message" placeholder="A few lines about your goals…" required></textarea>
+        </div>
+        <div class="full">
+          <button class="btn primary" type="submit">Send Message</button>
+          <span class="tiny" style="margin-left:8px">Or email <a href="mailto:hello@evergreenworks.co">hello@evergreenworks.co</a></span>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <div class="container footgrid">
+      <div>
+        <div class="brand" style="margin-bottom:10px">
+          <div class="logo" aria-hidden="true">EW</div>
+          <span>Evergreen Works</span>
+        </div>
+        <p class="tiny" style="max-width:60ch">
+          Big-agency strategy, small-town care. Serving East Greenville and the Upper Perkiomen Valley.
+        </p>
+        <div class="legal">© <span id="year"></span> Evergreen Works LLC. All rights reserved.</div>
+      </div>
+      <div>
+        <strong>Contact</strong>
+        <div class="tiny">Email: <a href="mailto:hello@evergreenworks.co">hello@evergreenworks.co</a></div>
+        <div class="tiny">Website: <a href="https://evergreenworks.co">evergreenworks.co</a></div>
+      </div>
+      <div>
+        <strong>Links</strong>
+        <div class="tiny"><a href="#services">Services</a></div>
+        <div class="tiny"><a href="#process">Process</a></div>
+        <div class="tiny"><a href="#contact">Free Audit</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Minimal helpers -->
+  <script>
+    // current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // smooth scroll for in-page anchors
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        const targetId = a.getAttribute('href').slice(1);
+        const el = document.getElementById(targetId);
+        if(el){
+          e.preventDefault();
+          el.scrollIntoView({behavior:'smooth', block:'start'});
+        }
+      });
+    });
+  </script>
+
+  <!-- Structured Data (update details as needed) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ProfessionalService",
+    "name":"Evergreen Works Digital Marketing Agency",
+    "url":"https://evergreenworks.co",
+    "image":"https://evergreenworks.co/og-image.jpg",
+    "areaServed":"East Greenville, PA",
+    "description":"Big-agency strategy, small-town care. SEO, ads, content, and conversion-focused websites.",
+    "brand":{"@type":"Brand","name":"Evergreen Works"},
+    "sameAs": [],
+    "contactPoint":[{"@type":"ContactPoint","email":"hello@evergreenworks.co","contactType":"sales"}]
+  }
+  </script>
+</body>
+</html>
